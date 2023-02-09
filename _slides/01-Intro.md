@@ -1,7 +1,7 @@
 ---
 ---
 
-# Demo 
+# CS 201 
 
 ## Introduction
 
