@@ -22,79 +22,21 @@ int main()
 ___
 
 <pre class="stretch highlight cpp">
-<span class="fragment zoom-in highlight-current-green" data-fragment-index="1">int</span> <span class="fragment zoom-in highlight-current-green">main</span><span class="fragment zoom-in highlight-current-green">()</span> <span class="fragment zoom-in highlight-current-green">{
+<span class="fragment zoom-in highlight-current-red" data-fragment-index="1">int</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="2">main</span><span class="fragment zoom-in highlight-current-red" data-fragment-index="3">()</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="4">{
 
   return 0;
 }</span>
 
 
-/* Every function has 4 parts:
+/* <span class="fragment zoom-in highlight-current-green" data-fragment-index="0">Every function has 4 parts:</span>
 
 <span class="fragment zoom-in highlight-current-green" data-fragment-index="1">1) Return type</span>
-2) Name
-3) Parameter list inside parenthesis
-4) Body inside curly braces
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="2">2) Name</span>
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="3">3) Parameter list inside parenthesis</span>
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="4">4) Body inside curly braces</span>
 
 */
 </pre>
-
-
-___
-
-
-Function return type is *int*
-
-
-```C++ [1|2|3,4-7]
-int // The return type is int
-main // The function name is main
-() // The parameter list is empty 
-{
-   // The body is everything between the curly braces
-   return 0;
-}
-```
-
-___
-
-
-Function name is *main*
-
-
-```C++
-int main() {
-
-   return 0;
-}
-```
-
-___
-
-
-Function parameter list is empty
-
-
-```C++
-int main() {
-
-   return 0;
-}
-```
-
-___
-
-
-Function body is `{ return 0; }`
-
-
-```C++
-int main() {
-
-   return 0;
-}
-```
-
-int
 
 
 
@@ -102,9 +44,20 @@ int
 
 --- 
 
-# Second slide
+# Hello, world
 
-stuff
+___
+
+```C++
+#include <iostream>  // Provides access to std::cout
+
+int main() {
+
+  std::cout << "Hello, world\n";
+  
+  return 0;
+}
+```
 
 Note:
 This will only display in the notes window.
