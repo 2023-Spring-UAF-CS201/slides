@@ -2,30 +2,137 @@
 layout: raw
 ---
 
+Core concepts
 
-stuff
+---
+
+Compiling & linking
+
+
+---
+
+`if` statements
 
 ___  
 
-# Basement 1
 
-Hey, you can still go down
+```C++ 
+if (condition) {
 
-```
-test
+  /* condition is a boolean
+
+     if condition evaluates to true,
+
+     then the body of the if statement executes
+*/
+
+}
 ```
 
 ___
 
-# Basement 2
+<pre class="stretch highlight cpp">
+<span class="fragment zoom-in highlight-current-red" data-fragment-index="1">int</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="2">main</span><span class="fragment zoom-in highlight-current-red" data-fragment-index="3">()</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="4">{
 
-You're rock bottom!
+  return 0;
+}</span>
+
+
+/* <span class="fragment zoom-in highlight-current-green" data-fragment-index="0">Every function has 4 parts:</span>
+
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="1">1) Return type</span>
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="2">2) Name</span>
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="3">3) Parameter list inside parenthesis</span>
+<span class="fragment zoom-in highlight-current-green" data-fragment-index="4">4) Body inside curly braces</span>
+
+*/
+</pre>
+
+
+
+
 
 --- 
 
-# Second slide
+Hello, world
 
-stuff
+___
+
+```C++
+#include &lt;iostream&gt;  // Provides std::cout
+
+int main() {
+
+  std::cout << "Hello, world\n";
+
+  // std::cout and << allow us to print messages
+	       
+  return 0;
+}
+```
+___
+
+```C++
+#include &lt;iostream&gt;  // Provides std::cout
+
+int main() {
+
+  std::cout << "Hello, world\n";
+
+  // The character \n means new line
+	       
+  return 0;
+}
+```
+
+___
+
+```C++
+#include &lt;iostream&gt;  // Provides std::cout & std::endl
+	       
+int main() {
+
+  std::cout << "Hello, world" << std::endl;
+
+  // std::endl is another way to say new line
+				 
+  return 0;
+}
+```
+
+
+___
+
+```C++
+#include &lt;iostream&gt;  // Provides std::cout & std::endl
+
+using std::cout;  // Allows us to say cout instead of std::cout
+using std::endl;  
+	  
+int main() {
+
+  cout << "Hello, world" << endl;
+  
+  return 0;
+}
+```
+
+			    
+___
+
+```C++
+#include &lt;iostream&gt;  // Provides std::cout & std::endl
+
+using std::cout;  
+using std::endl;  // Allows us to say endl instead of std::endl
+	  
+int main() {
+
+  cout << "Hello, world" << endl;
+  
+  return 0;
+}
+```
 
 Note:
 This will only display in the notes window.
