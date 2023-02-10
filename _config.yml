@@ -6,7 +6,7 @@ reveal:
   title: "CS 201"
   transition: "none" # none/fade/slide/convex/concave/zoom
   theme: "night" # beige/blood/league/moon/night/serif/simple/sky/solarized/white
-  number: true
+  number: false
   numberType: "c" # "h.v" / "h/v" / "c/t"
 
 # Slides
