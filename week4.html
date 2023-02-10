@@ -23,6 +23,7 @@ if (condition /* is a boolean*/) {
 
 }
 ```
+
 ___  
 
 
@@ -40,108 +41,34 @@ if (condition /* is a boolean*/) {
 
 ___
 
-<pre class="stretch highlight cpp">
-<span class="fragment zoom-in highlight-current-red" data-fragment-index="1">int</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="2">main</span><span class="fragment zoom-in highlight-current-red" data-fragment-index="3">()</span> <span class="fragment zoom-in highlight-current-red" data-fragment-index="4">{
 
-  return 0;
-}</span>
+```C++ 
+if (condition1 /* is a boolean */) {
 
+  // executes if condition is true
 
-/* <span class="fragment zoom-in highlight-current-green" data-fragment-index="0">Every function has 4 parts:</span>
+} else if (condition2 /* is also a boolean */ {
 
-<span class="fragment zoom-in highlight-current-green" data-fragment-index="1">1) Return type</span>
-<span class="fragment zoom-in highlight-current-green" data-fragment-index="2">2) Name</span>
-<span class="fragment zoom-in highlight-current-green" data-fragment-index="3">3) Parameter list inside parenthesis</span>
-<span class="fragment zoom-in highlight-current-green" data-fragment-index="4">4) Body inside curly braces</span>
+  // executes if condition1 is false and condition2 is true
 
-*/
-</pre>
-
-
-
-
-
---- 
-
-Hello, world
-
-___
-
-```C++
-#include &lt;iostream&gt;  // Provides std::cout
-
-int main() {
-
-  std::cout << "Hello, world\n";
-
-  // std::cout and << allow us to print messages
-	       
-  return 0;
-}
-```
-___
-
-```C++
-#include &lt;iostream&gt;  // Provides std::cout
-
-int main() {
-
-  std::cout << "Hello, world\n";
-
-  // The character \n means new line
-	       
-  return 0;
 }
 ```
 
 ___
 
-```C++
-#include &lt;iostream&gt;  // Provides std::cout & std::endl
-	       
-int main() {
 
-  std::cout << "Hello, world" << std::endl;
+```C++ 
+if (condition1 /* is a boolean */) {
 
-  // std::endl is another way to say new line
-				 
-  return 0;
+  // executes if condition is true
+
+} else if (condition2 /* is also a boolean */ {
+
+  // executes if condition1 is false and condition2 is true
+
+} else {
+
+  // executes if condition1 and condition 2 are both false
+
 }
 ```
-
-
-___
-
-```C++
-#include &lt;iostream&gt;  // Provides std::cout & std::endl
-
-using std::cout;  // Allows us to say cout instead of std::cout
-using std::endl;  
-	  
-int main() {
-
-  cout << "Hello, world" << endl;
-  
-  return 0;
-}
-```
-
-			    
-___
-
-```C++
-#include &lt;iostream&gt;  // Provides std::cout & std::endl
-
-using std::cout;  
-using std::endl;  // Allows us to say endl instead of std::endl
-	  
-int main() {
-
-  cout << "Hello, world" << endl;
-  
-  return 0;
-}
-```
-
-Note:
-This will only display in the notes window.
